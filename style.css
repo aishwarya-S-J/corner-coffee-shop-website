@@ -135,7 +135,7 @@ body{
 
         /* Home Section */
         .home-section{
-           background: url("background image/b1.jpg");
+           background: url("b1.jpg");
       background-size: cover;
       background-position: center;
     background-repeat: no-repeat;
