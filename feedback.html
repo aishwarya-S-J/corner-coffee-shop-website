@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Feedback</title>
+    <link rel="stylesheet" href="feedbackp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo">Coffee Shop</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="menu-btn">&#9776;</div>
+</nav>
+<section class="feedback-section">
+
+    <div class="feedback-box">
+
+        <h1>☕ Coffee Shop Feedback</h1>
+        <p>We value your opinion. Share your experience with us.</p>
+
+        <form>
+
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" placeholder="Mobile Number">
+            </div>
+
+            <div class="input-group">
+                <select required>
+                    <option value="">Select Coffee</option>
+                    <option>White Coffee</option>
+                    <option>Bru Coffee</option>
+                    <option>Nescafe</option>
+                    <option>Iced Coffee</option>
+                    <option>Organic Coffee</option>
+                    <option>Cappuccino</option>
+                    <option>Americano</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <textarea rows="5" placeholder="Write Your Feedback"></textarea>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </div>
+
+</section>
+<script>
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+</script>
+
+
+ </style>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>☕ Corner Coffee Shop</h2>
+            <p>
+                Freshly brewed coffee made with premium beans.
+                Enjoy every sip with quality and taste.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h2>Contact Info</h2>
+
+            <p>📍 Satara, Maharashtra</p>
+            <p>📞 +91 9876543210</p>
+            <p>📧 coffee@gmail.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h2>Follow Us</h2>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Corner Coffee Shop | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

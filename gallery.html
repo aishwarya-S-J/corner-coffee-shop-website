@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f5f0;
+}
+
+.gallery{
+    padding:60px 8%;
+}
+
+.gallery h1{
+    text-align:center;
+    font-size:42px;
+    color:#6f4e37;
+    margin-bottom:40px;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-box{
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.gallery-box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.gallery-box:hover img{
+    transform:scale(1.1);
+}
+
+/* Tablet */
+@media(max-width:992px){
+    .gallery-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+.navbar{
+    background:#333;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#f4b400;
+}
+
+.menu-btn{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* information display*/
+.main-content{
+ color:white;
+    margin-left:80px;
+    margin-top:150px;
+    max-width:600px;  
+} 
+
+.main-content h3{
+    color:#d4a017;
+    font-size:24px;
+    margin-bottom:15px;
+}
+.main-content h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.main-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+.btn{
+    display:inline-block;
+    background:#d4a017;
+    color:white;
+        padding:14px 35px;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#b8860b;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#333;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:20px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">☕ Corner Coffee Shop</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="contact.html">Contacts Us</a></li>
+           <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="menu-btn">&#9776;</div>
+</nav>
+
+ <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+<script>
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+</script>
+<section class="gallery">
+
+    <h1>☕ Corner Coffee Shop Gallery</h1>
+
+    <div class="gallery-container">
+
+        <div class="gallery-box">
+            <img src="gallery i/image2.jpg" alt="Coffee">
+        </div>
+
+        <div class="gallery-box">
+            <img src="gallery i/image1.jpg" alt="Coffee">
+        </div>
+
+        <div class="gallery-box">
+            <img src="gallery i/image3.jpg" alt="Coffee">
+        </div>
+
+        <div class="gallery-box">
+            <img src="gallery i/image4.jpg" alt="Coffee">
+        </div>
+
+        <div class="gallery-box">
+            <img src="gallery i/image5.jpg" alt="Coffee">
+        </div>
+
+        <div class="gallery-box">
+            <img src="gallery i/image6.jpg" alt="Coffee">
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
