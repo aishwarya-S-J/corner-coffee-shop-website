@@ -7,13 +7,6 @@ body{
     font-family:Arial, sans-serif;
 }
 
-    header {
-    background: url("image2.jpg");
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:700px ;
-}
 
 /*nav bar */
  
@@ -22,7 +15,7 @@ body{
 
         /* Home Section */
         .home-section{
-           background: url("background image/b1.jpg");
+           background: url("image2.jpg");
       background-size: cover;
       background-position: center;
     background-repeat: no-repeat;
